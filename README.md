@@ -15,6 +15,7 @@ In this repository, I am following the FreeCodeCamp learning module for Machine 
 ## Datasets:
 The datasets we used for the different notebooks are the following: 
 * MAGIC GAMMA TELESCOPE, Link: https://archive.ics.uci.edu/dataset/159/magic+gamma+telescope
+* SEOUL BIKE DATASET, Link: https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand
 
 ## Notebooks:
 ### 1. dcc-MAGIC-example (Can be run in Google Collab):
@@ -33,3 +34,20 @@ The datasets we used for the different notebooks are the following:
    - Created a `train_model` function that uses `nn_model.compile()` and `nn_model.fit()` with certain number of: num_nodes, dropout prob, lr, batch size and epochs.
    - iterated in many nested for loops the best possibilities to simulate real world to select best model with lowest validation loss
    - Obtained the final metrics of this model using `classification_report`.
+### 2. fcc-bikes-regression example (Can be run in Google Collab):
+   - Drop out the columns `Date`, `Holiday`, and `Seasons`.
+   - Convert the `functional` into binary, and select from `hour` when it was at noon.
+   - EDA of the scatter plots between each feature and the `bike_count` (the target regression variable we want).
+   - Dropped down `wind`, `visibility`, and `functional`.
+   - Performed a train, test, val split using `np.split` (Note: Dont copy this, instead use `train_test_split` from `sklearn.preprocessing`)
+   - Created a function to obtain the X, y for each split.
+   - Create a split with only one variable (temperature), to simulate simple linear regression
+   - Fit a `LinearRegression()` model from `sklearn.linear_model` to the temperature dataset.
+   - Plot the model obtained.
+   - Performed multiple linear regression model by splitting the data using the same function and more variables (still using "LinearRegression()")
+   - Using `tf.keras.layers.Normalization()`, created a normalization layer for the temperature dataset.
+   - Created a simple neural net with relu activation using `tf.keras.Sequential()`, `tf.keras.layers.Dense()` of one single unit.
+   - Fit the neural net model and compare it to the single temperature regression model.
+   - Created a multiple linear regression model using `tf.keras.Sequential()`, `tf.keras.layers.Dense()` with three layers, and relu activations.
+   - Fit the neural net model and compare it against the multiple linear regression model.
+   - Plot the train and validation loss to see output with temperature dataset.
