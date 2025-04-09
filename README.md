@@ -3,14 +3,14 @@
 In this repository, I am following the FreeCodeCamp learning module for Machine Learning for Everybody with Kylie Ying (Thank you for aiding me, this practical guide for intermediate-advanced level solidified theoretical knowledge into practicality), The video can be found here: https://www.youtube.com/watch?v=i_LwzRVP7bg&t=6386s&ab_channel=freeCodeCamp.org
 
 ## ML Models Analyzed:
-- Classification:
+#### Classification:
 * Logistic Regression. 'from sklearn.linear_model import LogisticRegression'
 * KNeighborsClassifier. 'from sklearn.neighbors import KNeighBorsClassifier'
 * Naive Bayes. : 'from sklearn.naive_bayes import GaussianNB'
 * Support Vector Machines. 'from sklearn.svm import SVC'
 * Neural Networks: Using 'tf.keras.Sequential()', 'tf.keras.layers.Dense()', 'tf.keras.layers.Dropout()'.
 
-- Regression:
+#### Regression:
 
 ## Datasets:
 The datasets we used for the different notebooks are the following: 
