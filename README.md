@@ -2,13 +2,13 @@
 
 In this repository, I am following the FreeCodeCamp learning module for Machine Learning for everybody with Kylie Ying, the video can be found here: https://www.youtube.com/watch?v=i_LwzRVP7bg&t=6386s&ab_channel=freeCodeCamp.org
 
-### Datasets:
+## Datasets:
 The datasets we used for the different notebooks are the following: 
 * MAGIC GAMMA TELESCOPE, Link: https://archive.ics.uci.edu/dataset/159/magic+gamma+telescope
 
-### Notebooks:
-1. dcc-MAGIC-example (Can be run in google collab):
-   - In this jupyter notebook, we read the data from 'sample_data' folder using 'Path' from 'pathlib'.
+## Notebooks:
+### 1. dcc-MAGIC-example (Can be run in Google Collab):
+   In this Jupyter notebook, we read the data from the 'sample_data' folder using 'Path' from 'pathlib'.
    - Assigned the proper columns to the data: "fLength", "fWidth","fSize","fConc","fConc1","fAsym","fM3Long","fM3Trans","fAlpha","fDist","class".
    - Read the data using 'pd.DataFrame' from 'pandas'.
    - Plotted the histograms between features, and target variable: 'class' (binary classification problem between gamma or hadron particles).
