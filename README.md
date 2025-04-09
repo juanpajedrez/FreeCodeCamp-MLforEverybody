@@ -4,11 +4,11 @@ In this repository, I am following the FreeCodeCamp learning module for Machine 
 
 ## ML Models Analyzed:
 #### Classification:
-* Logistic Regression. 'from sklearn.linear_model import LogisticRegression'
-* KNeighborsClassifier. 'from sklearn.neighbors import KNeighBorsClassifier'
-* Naive Bayes. : 'from sklearn.naive_bayes import GaussianNB'
-* Support Vector Machines. 'from sklearn.svm import SVC'
-* Neural Networks: Using 'tf.keras.Sequential()', 'tf.keras.layers.Dense()', 'tf.keras.layers.Dropout()'.
+* Logistic Regression. `from sklearn.linear_model import LogisticRegression`
+* KNeighborsClassifier. `from sklearn.neighbors import KNeighBorsClassifier`
+* Naive Bayes. : `from sklearn.naive_bayes import GaussianNB`
+* Support Vector Machines. `from sklearn.svm import SVC`
+* Neural Networks: Using `tf.keras.Sequential()`, `tf.keras.layers.Dense()`, `tf.keras.layers.Dropout()`.
 
 #### Regression:
 
