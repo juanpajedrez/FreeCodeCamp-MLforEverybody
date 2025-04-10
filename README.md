@@ -65,9 +65,9 @@ The datasets we used for the different notebooks are the following:
    - Read the seeds dataset, with their respective columns: area, perimeter, compactness, length, width, asymmetry, groove, and class
    - Perform an EDA between all features to analyze vs class.
    - Import and fit `KMeans` with two features and 3 clusters: perimeter and asymmetry
-   - Plot the scatter plots using 'sns.scatterplot()' between KMeans predicted and the actual data to compare
+   - Plot the scatter plots using `sns.scatterplot()` between KMeans predicted and the actual data to compare
    - Import and fit `KMeans` with all features and 3 clusters: all columns except for the class
-   - Plot the scatter plots using 'sns.scatterplot()' between KMeans predicted and the actual data to compare
+   - Plot the scatter plots using `sns.scatterplot()` between KMeans predicted and the actual data to compare
    - Import and fit a `PCA` class for only 2 components using all features.
    - Fit a KMeans for these 2 components only.
    - Using `pd.DataFrame()`, obtain two data frames: one for clusters obtained from KMeans and one from real data.
