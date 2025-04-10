@@ -2,7 +2,8 @@
 
 In this repository, I am following the FreeCodeCamp learning module for Machine Learning for Everybody with Kylie Ying (Thank you for aiding me, this practical guide for intermediate-advanced level solidified theoretical knowledge into practicality), The video can be found here: https://www.youtube.com/watch?v=i_LwzRVP7bg&t=6386s&ab_channel=freeCodeCamp.org
 
-## ML Models Analyzed:
+# ML Models Analyzed:
+## Supervised Learning:
 #### Classification:
 * Logistic Regression. `from sklearn.linear_model import LogisticRegression`
 * KNeighborsClassifier. `from sklearn.neighbors import KNeighBorsClassifier`
@@ -11,11 +12,20 @@ In this repository, I am following the FreeCodeCamp learning module for Machine 
 * Neural Networks: Using `tf.keras.Sequential()`, `tf.keras.layers.Dense()`, `tf.keras.layers.Dropout()`.
 
 #### Regression:
+* Linear Regression: 'from sklearn.linear_model import LinearRegression'
+* Neural Networks: 'import tensorflow as tf', we also used: 'tensorflow.keras.layers' a lot to set up.
+
+## Unsupervised Learning:
+* KMeans: 'from sklearn.cluster import KMeans'
+* PCA: from 'from sklearn.decomposition import PCA'
+
+#### Regression:
 
 ## Datasets:
 The datasets we used for the different notebooks are the following: 
 * MAGIC GAMMA TELESCOPE, Link: https://archive.ics.uci.edu/dataset/159/magic+gamma+telescope
 * SEOUL BIKE DATASET, Link: https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand
+* SEEDS DATASET, Link: https://archive.ics.uci.edu/dataset/236/seeds
 
 ## Notebooks:
 ### 1. dcc-MAGIC-example (Can be run in Google Collab):
@@ -51,3 +61,14 @@ The datasets we used for the different notebooks are the following:
    - Created a multiple linear regression model using `tf.keras.Sequential()`, `tf.keras.layers.Dense()` with three layers, and relu activations.
    - Fit the neural net model and compare it against the multiple linear regression model.
    - Plot the train and validation loss to see output with temperature dataset.
+### 3. Kmeans and PCA example (Can be run in Google Collab):
+   - Read the seeds dataset, with their respective columns: area, perimeter, compactness, length, width, asymmetry, groove, and class
+   - Perform an EDA between all features to analyze vs class.
+   - Import and fit `KMeans` with two features and 3 clusters: perimeter and asymmetry
+   - Plot the scatter plots using 'sns.scatterplot()' between KMeans predicted and the actual data to compare
+   - Import and fit `KMeans` with all features and 3 clusters: all columns except for the class
+   - Plot the scatter plots using 'sns.scatterplot()' between KMeans predicted and the actual data to compare
+   - Import and fit a `PCA` class for only 2 components using all features.
+   - Fit a KMeans for these 2 components only.
+   - Using `pd.DataFrame()`, obtain two data frames: one for clusters obtained from KMeans and one from real data.
+   - Plot the scatter plots between PCA_k_means and PCA_truth and compare weather they are similar or not.
