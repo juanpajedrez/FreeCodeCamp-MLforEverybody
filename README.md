@@ -12,8 +12,8 @@ In this repository, I am following the FreeCodeCamp learning module for Machine 
 * Neural Networks: Using `tf.keras.Sequential()`, `tf.keras.layers.Dense()`, `tf.keras.layers.Dropout()`.
 
 #### Regression:
-* Linear Regression: 'from sklearn.linear_model import LinearRegression'
-* Neural Networks: 'import tensorflow as tf', we also used: 'tensorflow.keras.layers' a lot to set up.
+* Linear Regression: `from sklearn.linear_model import LinearRegression`
+* Neural Networks: `import tensorflow as tf`, we also used: `tensorflow.keras.layers` a lot to set up.
 
 ## Unsupervised Learning:
 * KMeans: 'from sklearn.cluster import KMeans'
@@ -71,4 +71,4 @@ The datasets we used for the different notebooks are the following:
    - Import and fit a `PCA` class for only 2 components using all features.
    - Fit a KMeans for these 2 components only.
    - Using `pd.DataFrame()`, obtain two data frames: one for clusters obtained from KMeans and one from real data.
-   - Plot the scatter plots between PCA_k_means and PCA_truth and compare weather they are similar or not.
+   - Plot the scatter plots between PCA_k_means and PCA_truth and compare whether they are similar or not.
